@@ -15,14 +15,17 @@ const Featured = () => {
 
   return (
     <div className="mb-16">
-      <div className="w-full h-full ">
-        <div className=" bg-gradient-to-r from-black">
+      <div className="w-full h-full">
+        <div className="">
           <img
             src={`https://image.tmdb.org/t/p/original/${movie?.backdrop_path}`}
             alt={"Rendering Issue"}
             className="w-full h-full object-cover"
           />
-          <div className="w-fit md:w-[92.5vw] absolute top-[13%] md:top-[20%] lg:top-[50%] sm:top-[20%]  ml-[3vw] text-white space-y-4 bg-black bg-opacity-30 p-5  rounded-md">
+          <div className="h-[854px] w-full justify-center bg-black bg-opacity-30 absolute top-0">
+              
+            </div>
+          <div className="w-fit md:w-[92.5vw] absolute bottom-[75%] md:bottom-[50%] lg:top-[50%] sm:top-[20%]  ml-[3vw] text-white space-y-4 p-5  rounded-md">
             <div className="text-xl sm:text-2xl md:text-3xl lg:text-6xl font-bold">
               {movie?.title}
             </div>
@@ -33,7 +36,7 @@ const Featured = () => {
               <button className=" text-black bg-white px-1 sm:px-2 md:px-4 lg:px-5 md:py-[6px] pr-2 sm:pr-4 md:pr-6 lg:pr-7 flex items-center rounded">
                 <i className="bi bi-play-fill text-2xl md:text-3xl lg-text-4xl mr-1"></i>Play
               </button>
-              <button className=" text-white bg-gray-600 px-1 sm:px-2 md:px-4 lg:px-5 py-[2.3px] sm:py-[3px] md:py-[9px] flex items-center rounded bg-opacity-50">
+              <button className=" text-white bg-gray-600 px-3 md:px-4 lg:px-5 py-[2.3px] sm:py-[3px] md:py-[7px] flex items-center rounded bg-opacity-50 relative bottom-[0.5px]">
                 <i className="bi bi-info-circle text-xl md:text-2xl lg:text-3xl mr-1"></i>More Info
               </button>
             </div>
