@@ -9,11 +9,11 @@ const Home = () => {
         <Navbar/>
         <Featured/>
         <List title="Trending" fetchURL = {requests.requestTrending}/>
+        <List title="Arriving Soon" fetchURL = {requests.requestUpcoming}/>
         <List title="Top Rated TV & Animes" fetchURL={requests.requestTVrated}/>
         <List title="The Classics" fetchURL={requests.requestMovieRated}/>
         <List title="Popular On Netflix" fetchURL={requests.requestPopular}/>
         <List title="TV On Air" fetchURL={requests.requestTVonAir}/>
-        <List title="Arriving Soon" fetchURL = {requests.requestUpcoming}/>
     </>
   )
 }
