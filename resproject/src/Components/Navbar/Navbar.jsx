@@ -19,23 +19,23 @@ const Navbar = () => {
               : "bg-none h-[9vh] w-[100%]  flex items-center text-white justify-between  transition-all ease-linear"
           }
         >
-          <div className=" space-x-8 flex whitespace-nowrap pl-16">
+          <div className="space-x-8 md:space-x-6 lg:space-x-8 flex whitespace-nowrap pl-2 sm:pl-7 md:pl-12 lg:pl-16 ">
             <img
               className="h-6 "
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/2560px-Netflix_2015_logo.svg.png"
               alt=""
             />
             <span className="hover:cursor-pointer">Home</span>
-            <span className="hover:cursor-pointer">TV Shows</span>
-            <span className="hover:cursor-pointer">Movies</span>
-            <span className="hover:cursor-pointer">New & Popular</span>
-            <span className="hover:cursor-pointer">My List</span>
+            <span className="hover:cursor-pointer invisible sm:visible">TV Shows</span>
+            <span className="hover:cursor-pointer invisible sm:visible">Movies</span>
+            <span className="hover:cursor-pointer invisible md:visible">New & Popular</span>
+            <span className="hover:cursor-pointer invisible lg:visible">My List</span>
           </div>
-          <div className="space-x-6 flex whitespace-nowrap items-center pr-10">
-            <span className=" text-xl">
+          <div className="space-x-8 md:space-x-4 lg:space-x-8 flex whitespace-nowrap right-2 sm:right-7 md:right-8 lg:right-16 items-center absolute">
+            <span className=" text-xl relative left-[85px] md:left-0">
               <i className="bi bi-search"></i>
             </span>
-            <span>Children</span>
+            <span class="invisible md:visible">Children</span>
             <span className="text-xl">
               <i className="bi bi-bell "></i>
             </span>
