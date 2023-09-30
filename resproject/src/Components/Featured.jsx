@@ -29,12 +29,12 @@ const Featured = () => {
             <div className=" font-medium text-xs sm:text-base md:text-lg lg:text-xl w-[90.5vw] text-slate-200 hidden md:block">
               {movie?.overview}
             </div>
-            <div className=" flex items-start text-xs sm:text-sm md:text-base lg:text-lg font-semibold space-x-2 md:space-x-4">
+            <div className=" flex items-start text-xs sm:text-sm md:text-base lg:text-lg font-semibold space-x-2 md:space-x-4 ">
               <button className=" text-black bg-white px-1 sm:px-2 md:px-4 lg:px-5 md:py-[6px] pr-2 sm:pr-4 md:pr-6 lg:pr-7 flex items-center rounded">
                 <i className="bi bi-play-fill text-2xl md:text-3xl lg-text-4xl mr-1"></i>Play
               </button>
-              <button className=" text-white bg-gray-600 px-1 sm:px-2 md:px-4 lg:px-5 md:py-[6px] flex items-center rounded bg-opacity-50">
-                <i className="bi bi-info-circle text-2xl md:text-3xl lg:text-4xl mr-3"></i>More Info
+              <button className=" text-white bg-gray-600 px-1 sm:px-2 md:px-4 lg:px-5 py-[2.3px] sm:py-[3px] md:py-[9px] flex items-center rounded bg-opacity-50">
+                <i className="bi bi-info-circle text-xl md:text-2xl lg:text-3xl mr-1"></i>More Info
               </button>
             </div>
             <div className="text-slate-200 hidden lg:block">
