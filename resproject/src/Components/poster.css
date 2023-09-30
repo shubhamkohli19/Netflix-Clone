@@ -1,0 +1,20 @@
+.leftArrow{
+    opacity: 0;
+}
+
+.rightArrow{
+    opacity: 0;
+}
+
+.container1:hover .leftArrow{
+    opacity: 100;
+}
+
+.container1:hover .rightArrow{
+    opacity: 100;
+}
+
+.container2{
+    transform: translateX(0px);
+    transition:  .5s linear;
+}

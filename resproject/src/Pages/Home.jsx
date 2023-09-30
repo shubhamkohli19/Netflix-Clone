@@ -1,6 +1,7 @@
 import Featured from '../Components/Featured'
 import List from '../Components/List'
 import Navbar from '../Components/Navbar'
+import Poster from '../Components/Poster'
 import requests from '../Requests'
 
 const Home = () => {
@@ -8,6 +9,7 @@ const Home = () => {
     <>
         <Navbar/>
         <Featured/>
+        <Poster title="Trending" fetchURL = {requests.requestTrending}/>
         <List title="Trending" fetchURL = {requests.requestTrending}/>
         <List title="Arriving Soon" fetchURL = {requests.requestUpcoming}/>
         <List title="Top Rated TV & Animes" fetchURL={requests.requestTVrated}/>
