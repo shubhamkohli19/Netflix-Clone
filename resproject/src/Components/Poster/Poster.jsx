@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
-import ListItem from "./ListItem";
 import "./poster.css";
 import { useRef } from "react";
-import PosterItem from "./PosterItem";
+import PosterItem from "../PosterItem/PosterItem";
 
 
 const Poster = ({ title , fetchURL}) => {
@@ -41,7 +40,7 @@ const Poster = ({ title , fetchURL}) => {
       </div>
       <div className="flex space-x-[5px] mb-4 overflow-hidden container1">
         <div
-          className="bg-black flex items-center justify-around min-w-[4.4%] bg-opacity-60 left z-10  m-auto" 
+          className="bg-black flex items-center justify-around min-w-[4.4%] bg-opacity-60 left z-10 h-[340px]  m-auto" 
           onClick={() => handleClick("left")}
           style={{ opacity: leftEnd && "0" }}
         >

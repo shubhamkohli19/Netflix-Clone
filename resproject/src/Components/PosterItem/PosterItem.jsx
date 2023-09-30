@@ -1,6 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import "./ListItem.css";
+import "./posterItem.css";
 
 const PosterItem = ({ fetchURL }) => {
   const [movies, setMovies] = useState([]);

@@ -1,7 +1,7 @@
 import Featured from '../Components/Featured'
-import List from '../Components/List'
+import List from '../Components/List/List'
 import Navbar from '../Components/Navbar'
-import Poster from '../Components/Poster'
+import Poster from '../Components/Poster/Poster'
 import requests from '../Requests'
 
 const Home = () => {
