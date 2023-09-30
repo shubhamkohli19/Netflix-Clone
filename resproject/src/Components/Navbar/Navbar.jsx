@@ -1,4 +1,5 @@
 import { useState } from "react";
+import './navbar.css'
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -10,7 +11,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <div className="h-[9vh] w-[100%] fixed top-0 z-50">
+      <div className="h-[9vh] w-[100%] fixed top-0 z-50  box">
         <div
           className={
             isScrolled
