@@ -3,8 +3,7 @@ import "./poster.css";
 import { useRef } from "react";
 import PosterItem from "../PosterItem/PosterItem";
 
-
-const Poster = ({ title , fetchURL}) => {
+const Poster = ({ title, fetchURL }) => {
   const props = fetchURL;
   const [slideNumber, setSlideNumber] = useState(0);
   const [leftEnd, setLeftEnd] = useState(true);
@@ -22,14 +21,14 @@ const Poster = ({ title , fetchURL}) => {
     }
     if (slideNumber > 0) {
       setLeftEnd(false);
-    } 
+    }
     if (slideNumber === 0) {
       setLeftEnd(true);
     }
     if (slideNumber < 14) {
       setRightEnd(false);
-    } 
-    if (slideNumber === 14){
+    }
+    if (slideNumber === 14) {
       setRightEnd(true);
     }
   };
@@ -40,7 +39,7 @@ const Poster = ({ title , fetchURL}) => {
       </div>
       <div className="flex space-x-[5px] mb-4 overflow-hidden container1">
         <div
-          className="bg-black flex items-center justify-around min-w-[4.4%] bg-opacity-60 left z-10 h-[340px]  m-auto" 
+          className="bg-black flex items-center justify-around min-w-[4.4%] bg-opacity-60 left z-10 h-[340px]  m-auto"
           onClick={() => handleClick("left")}
           style={{ opacity: leftEnd && "0" }}
         >
@@ -50,7 +49,7 @@ const Poster = ({ title , fetchURL}) => {
           ></i>
         </div>
         <div className="flex space-x-[5px] container2" ref={listRef}>
-          <PosterItem  fetchURL={props}/>
+          <PosterItem fetchURL={props} />
         </div>
         <div
           className="bg-black flex items-center justify-around min-w-[4.4%] bg-opacity-60 absolute right-0 h-[340px] right my-5"
@@ -65,7 +64,6 @@ const Poster = ({ title , fetchURL}) => {
       </div>
     </div>
   );
-
 };
 
 export default Poster;

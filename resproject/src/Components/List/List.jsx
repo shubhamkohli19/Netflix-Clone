@@ -3,8 +3,7 @@ import ListItem from "../ListItem/ListItem";
 import "./list.css";
 import { useRef } from "react";
 
-
-const List = ({ title , fetchURL}) => {
+const List = ({ title, fetchURL }) => {
   const props = fetchURL;
   const [slideNumber, setSlideNumber] = useState(0);
   const [leftEnd, setLeftEnd] = useState(true);
@@ -22,14 +21,14 @@ const List = ({ title , fetchURL}) => {
     }
     if (slideNumber > 0) {
       setLeftEnd(false);
-    } 
+    }
     if (slideNumber === 0) {
       setLeftEnd(true);
     }
     if (slideNumber < 14) {
       setRightEnd(false);
-    } 
-    if (slideNumber === 14){
+    }
+    if (slideNumber === 14) {
       setRightEnd(true);
     }
   };
@@ -40,7 +39,7 @@ const List = ({ title , fetchURL}) => {
       </div>
       <div className="flex space-x-[5px] mb-4 overflow-hidden container1">
         <div
-          className="bg-black flex items-center justify-around min-w-[4.4%] bg-opacity-60 left z-10 h-[130px] m-auto" 
+          className="bg-black flex items-center justify-around min-w-[4.4%] bg-opacity-60 left z-10 h-[130px] m-auto"
           onClick={() => handleClick("left")}
           style={{ opacity: leftEnd && "0" }}
         >
@@ -50,7 +49,7 @@ const List = ({ title , fetchURL}) => {
           ></i>
         </div>
         <div className="flex space-x-[5px] container2" ref={listRef}>
-          <ListItem  fetchURL={props}/>
+          <ListItem fetchURL={props} />
         </div>
         <div
           className="bg-black flex items-center justify-around min-w-[4.4%] bg-opacity-60 absolute right-0 min-h-[130px] right my-5"
@@ -65,7 +64,6 @@ const List = ({ title , fetchURL}) => {
       </div>
     </div>
   );
-
 };
 
 export default List;

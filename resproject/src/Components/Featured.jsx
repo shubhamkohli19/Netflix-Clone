@@ -14,16 +14,16 @@ const Featured = () => {
   }, []);
 
   return (
-    <div class="mb-16">
-      <div class="w-full h-full ">
-        <div class=" bg-gradient-to-r from-black">
+    <div className="mb-16">
+      <div className="w-full h-full ">
+        <div className=" bg-gradient-to-r from-black">
           <img
             src={`https://image.tmdb.org/t/p/original/${movie?.backdrop_path}`}
             alt={"Rendering Issue"}
-            class="w-full h-full object-cover"
+            className="w-full h-full object-cover"
           />
           <div className=" w-[92.5vw] absolute md:top-[30%] lg:top-[50%] sm:top-[20%] top-[5%] ml-[3vw] text-white space-y-4 bg-black bg-opacity-30 p-5  rounded-md">
-            <div class="text-xl sm:text-2xl md:text-3xl lg:text-6xl font-bold">
+            <div className="text-xl sm:text-2xl md:text-3xl lg:text-6xl font-bold">
               {movie?.title}
             </div>
             <div className=" font-medium text-xs sm:text-base md:text-lg lg:text-xl w-[90.5vw] text-slate-200">
@@ -37,7 +37,9 @@ const Featured = () => {
                 <i className="bi bi-info-circle text-3xl mr-3"></i>More Info
               </button>
             </div>
-            <div class="text-slate-200">Released: {movie?.release_date}</div>
+            <div className="text-slate-200">
+              Released: {movie?.release_date}
+            </div>
           </div>
         </div>
       </div>
