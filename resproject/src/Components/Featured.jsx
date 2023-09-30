@@ -14,7 +14,7 @@ const Featured = () => {
   }, []);
 
   return (
-    <div class="">
+    <div class="mb-16">
       <div class="w-full h-full ">
         <div class=" bg-gradient-to-r from-black">
           <img

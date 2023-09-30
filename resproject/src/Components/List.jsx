@@ -35,7 +35,7 @@ const List = ({ title , fetchURL}) => {
   };
   return (
     <div className="text-white">
-      <div className="px-[76px] py-3 pt-8 font-semibold text-[22px] h-auto w-fit">
+      <div className="px-[76px] py-3  font-semibold text-[22px] h-auto w-fit">
         {title}
       </div>
       <div className="flex space-x-[5px] mb-4 overflow-hidden container1">
