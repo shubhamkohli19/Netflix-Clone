@@ -19,7 +19,7 @@ const Featured = () => {
         <div class=" bg-gradient-to-r from-black">
           <img
             src={`https://image.tmdb.org/t/p/original/${movie?.backdrop_path}`}
-            alt={movie?.title}
+            alt={"Rendering Issue"}
             class="w-full h-full object-cover"
           />
           <div className=" w-[92.5vw] absolute md:top-[30%] lg:top-[50%] sm:top-[20%] top-[5%] ml-[3vw] text-white space-y-4 bg-black bg-opacity-30 p-5  rounded-md">
