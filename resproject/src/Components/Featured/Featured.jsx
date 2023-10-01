@@ -1,6 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import requests from "../Requests";
+import requests from "../../Requests";
+import './featured.css';
 
 const Featured = () => {
   const [movies, setMovies] = useState([]);
@@ -22,7 +23,7 @@ const Featured = () => {
             alt={"Rendering Issue"}
             className="w-full h-full object-cover"
           />
-          <div className="h-[854px] w-full justify-center bg-black bg-opacity-30 absolute top-0">
+          <div className="h-[854px] w-full justify-center bg-black bg-opacity-30 absolute top-0 background">
               
             </div>
           <div className="w-fit md:w-[92.5vw] absolute bottom-[68%] md:bottom-[50%] lg:top-[50%] sm:top-[20%]  ml-[3vw] text-white space-y-4 p-5  rounded-md">
