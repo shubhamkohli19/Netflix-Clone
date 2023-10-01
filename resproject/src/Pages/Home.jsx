@@ -10,7 +10,7 @@ const Home = () => {
       <Navbar />
       <Featured />
       <Poster title="Netflix Originals" fetchURL={requests.requestOriginals} />
-      <Poster title="Critically Acclaimed TV Shows" fetchURL={requests.requestTrendingMovie} />
+      <Poster title="Critically Acclaimed TV Shows" fetchURL={requests.requestTrendingTV} />
       <Poster title="Top Rated TV & Animes" fetchURL={requests.requestTVrated} />
       <List title="Arriving Soon" fetchURL={requests.requestUpcoming} />
       <List title="Trending" fetchURL={requests.requestTrending} />

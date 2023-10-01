@@ -10,7 +10,7 @@ const Poster = ({ title, fetchURL }) => {
   const [rightEnd, setRightEnd] = useState(false);
   const listRef = useRef();
   const handleClick = (direction) => {
-    let distance = listRef.current.getBoundingClientRect().x - 73;
+    let distance = listRef.current.getBoundingClientRect().x - 69;
     if (direction === "left" && slideNumber > 0) {
       listRef.current.style.transform = `translateX(${230 + distance}px)`;
       setSlideNumber(slideNumber - 1);
