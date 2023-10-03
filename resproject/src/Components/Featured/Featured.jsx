@@ -15,7 +15,7 @@ const Featured = () => {
   }, []);
 
   return (
-    <div className="mb-16">
+    <div className="mb-[3vw]">
       <div className="w-full h-full">
         <div className="">
           <img
@@ -26,7 +26,7 @@ const Featured = () => {
           <div className="h-[854px] w-full justify-center bg-black bg-opacity-30 absolute top-0 background">
               
             </div>
-          <div className="w-fit md:w-[92.5vw] absolute bottom-[68%] md:bottom-[50%] lg:top-[50%] sm:top-[20%]  ml-[3vw] text-white space-y-4 p-5  rounded-md">
+          <div className="w-fit md:w-[92.5vw] absolute bottom-[74%] md:bottom-[50%] lg:top-[50%] sm:top-[10%]  ml-[3vw] text-white space-y-4 p-5  rounded-md">
             <div className="text-xl sm:text-2xl md:text-3xl lg:text-6xl font-bold">
               {movie?.title}
             </div>

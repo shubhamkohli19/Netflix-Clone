@@ -34,12 +34,12 @@ const Poster = ({ title, fetchURL }) => {
   };
   return (
     <div className="text-white">
-      <div className="px-[76px] py-3  font-semibold text-[22px] h-auto w-fit">
+      <div className="px-[4.9vw] font-semibold text-[15px] lg:text-[1.5vw] h-auto w-fit">
         {title}
       </div>
-      <div className="flex space-x-[5px] mb-4 overflow-hidden container1">
+      <div className="flex space-x-[5px] mb-[1vw] overflow-x-scroll overflow-y-hidden md:overflow-hidden container1">
         <div
-          className="bg-black flex items-center justify-around min-w-[4.4%] bg-opacity-60 left z-10 h-[340px]  m-auto"
+          className="bg-black flex items-center justify-around min-w-[4.36vw] bg-opacity-60 left z-10 h-[22.2vw] m-auto opacity-0 md:opacity-100"
           onClick={() => handleClick("left")}
           style={{ opacity: leftEnd && "0" }}
         >
@@ -52,7 +52,7 @@ const Poster = ({ title, fetchURL }) => {
           <PosterItem fetchURL={props} />
         </div>
         <div
-          className="bg-black flex items-center justify-around min-w-[4.4%] bg-opacity-60 absolute right-0 h-[340px] right my-5"
+          className="bg-black flex items-center justify-around min-w-[4.36vw] bg-opacity-60 absolute opacity-0 md:opacity-100 right-0 h-[22.2vw] right my-5"
           onClick={() => handleClick("right")}
           style={{ opacity: rightEnd && 0 }}
         >
