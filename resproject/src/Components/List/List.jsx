@@ -33,7 +33,7 @@ const List = ({ title, fetchURL }) => {
     }
   };
   return (
-    <div className="text-white">
+    <div className="text-white mb-[2vw]">
       <div className="pl-[4.9vw]  font-semibold text-[15px]  lg:text-[1.5vw]  h-auto w-fit">
         {title}
       </div>

@@ -33,8 +33,8 @@ const Poster = ({ title, fetchURL }) => {
     }
   };
   return (
-    <div className="text-white">
-      <div className="px-[4.9vw] font-semibold text-[15px] lg:text-[1.5vw] h-auto w-fit">
+    <div className="text-white mb-[2vw]">
+      <div className="px-[4.9vw] font-semibold text-[15px] lg:text-[1.5vw] h-auto w-fit text-white ">
         {title}
       </div>
       <div className="flex space-x-[5px] mb-[1vw] overflow-x-scroll overflow-y-hidden md:overflow-hidden container1">

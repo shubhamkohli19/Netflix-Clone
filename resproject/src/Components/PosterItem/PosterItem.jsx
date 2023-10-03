@@ -15,7 +15,7 @@ const PosterItem = ({ fetchURL }) => {
     <div className="flex h-fit py-[1.3vw] relative">
       {movies.map((item) => {
         return (
-          <div className="w-[30vw] sm:w-[22vw] lg:w-[14.95vw] flex p-[.14vw] cursor-pointer hover:scale-110 ease-in duration-300 background">
+          <div className="w-[45vw] sm:w-[22vw] lg:w-[14.95vw] flex p-[.14vw] cursor-pointer hover:scale-110 ease-in duration-300 background">
             <img
               src={`https://image.tmdb.org/t/p/w500/${item.poster_path}`}
               className="rounded h-fit "
