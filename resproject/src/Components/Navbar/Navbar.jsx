@@ -1,5 +1,5 @@
 import { useState } from "react";
-import './navbar.css'
+import "./navbar.css";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -20,16 +20,29 @@ const Navbar = () => {
           }
         >
           <div className="space-x-8 md:space-x-6 lg:space-x-8 flex whitespace-nowrap pl-2 sm:pl-7 md:pl-12 lg:pl-16 ">
-            <img
-              className="h-6 "
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/2560px-Netflix_2015_logo.svg.png"
-              alt=""
-            />
-            <span className="hover:cursor-pointer">Home</span>
-            <span className="hover:cursor-pointer invisible sm:visible">TV Shows</span>
-            <span className="hover:cursor-pointer invisible sm:visible">Movies</span>
-            <span className="hover:cursor-pointer invisible md:visible">New & Popular</span>
-            <span className="hover:cursor-pointer invisible lg:visible">My List</span>
+            <a href="/">
+              <img
+                className="h-6  cursor-pointer"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/2560px-Netflix_2015_logo.svg.png"
+                alt=""
+              />
+            </a>
+            <a className="hover:cursor-pointer" href="/">
+              Home
+            </a>
+            <a className="hover:cursor-pointer invisible sm:visible" href="/tv">
+              TV Shows
+            </a>
+            <a
+              className="hover:cursor-pointer invisible sm:visible"
+              href="/movies"
+            >
+              Movies
+            </a>
+            <a className="hover:cursor-pointer invisible md:visible">
+              New & Popular
+            </a>
+            <a className="hover:cursor-pointer invisible lg:visible">My List</a>
           </div>
           <div className="space-x-8 md:space-x-4 lg:space-x-8 flex whitespace-nowrap right-2 sm:right-7 md:right-8 lg:right-16 items-center absolute">
             <span className=" text-xl relative left-[85px] md:left-0">
