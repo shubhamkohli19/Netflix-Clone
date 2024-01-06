@@ -14,10 +14,14 @@ const Featured = () => {
     });
   }, []);
 
+  const redirectToMovie = () => {
+    window.location.href = `https://www.themoviedb.org/movie/${movie.id}`;
+  };
+
   return (
     <div className="mb-[3vw]">
       <div className="w-full h-full">
-        <div className="">
+        <div>
           <img
             src={`https://image.tmdb.org/t/p/original/${movie?.backdrop_path}`}
             alt={"Rendering Issue"}
@@ -34,7 +38,7 @@ const Featured = () => {
               {movie?.overview}
             </div>
             <div className=" flex items-start text-xs sm:text-sm md:text-base lg:text-lg font-semibold space-x-2 md:space-x-4 ">
-              <button className=" text-black bg-white px-1 sm:px-2 md:px-4 lg:px-5 md:py-[6px] pr-2 sm:pr-4 md:pr-6 lg:pr-7 flex items-center rounded">
+              <button onClick={redirectToMovie} className=" text-black bg-white px-1 sm:px-2 md:px-4 lg:px-5 md:py-[6px] pr-2 sm:pr-4 md:pr-6 lg:pr-7 flex items-center rounded">
                 <i className="bi bi-play-fill text-2xl md:text-3xl lg-text-4xl mr-1"></i>Play
               </button>
               <button className=" text-white bg-gray-600 px-3 md:px-4 lg:px-5 py-[2.3px] sm:py-[3px] md:py-[7px] flex items-center rounded bg-opacity-50 relative bottom-[0.5px]">

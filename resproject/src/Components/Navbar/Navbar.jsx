@@ -35,7 +35,7 @@ const Navbar = () => {
             <span className=" text-xl relative left-[85px] md:left-0">
               <i className="bi bi-search"></i>
             </span>
-            <span class="invisible md:visible">Children</span>
+            <span className="invisible md:visible">Children</span>
             <span className="text-xl">
               <i className="bi bi-bell "></i>
             </span>

@@ -15,7 +15,7 @@ const ListItem = ({ fetchURL }) => {
     <div className="flex h-fit py-[1.3vw] relative">
       {movies.map((item) => {
         return (
-          <div className="w-[45vw] sm:w-[22vw] lg:w-[14.95vw]  flex-col p-[.14vw] cursor-pointer hover:scale-125 ease-in duration-500">
+          <a href={`https://www.themoviedb.org/movie/${item.id}`} key={item.id} className="w-[45vw] sm:w-[22vw] lg:w-[14.95vw]  flex-col p-[.14vw] cursor-pointer hover:scale-125 ease-in duration-500">
             <img
               src={`https://image.tmdb.org/t/p/w500/${item.backdrop_path}`}
               className="rounded h-fit "
@@ -24,7 +24,7 @@ const ListItem = ({ fetchURL }) => {
             <div className="h-full w-full text-[12px] sm:text-[15px] md:text[1.5vw] background flex items-center text-center rounded justify-center opacity-0 hover:opacity-100 absolute top-6 overflow-hidden hover:bg-black hover:top-[3.5px] hover:bg-opacity-30 ease-in duration-500">
               {item.title}
             </div>
-          </div>
+          </a>
         );
       })}
     </div>
